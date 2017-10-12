@@ -11,6 +11,7 @@
 
 #import "Masonry.h"
 
+#import "LZNavigationController.h"
 #import "AppConstant.h"
 
 #endif /* LZKit_h */

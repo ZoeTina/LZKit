@@ -20,6 +20,7 @@
 #else
 #define YYLog(...)
 #endif
+#define kSysVersion      ([[[UIDevice currentDevice] systemVersion] floatValue])
 
 #define SafeAreaBottomHeight (kScreenHeight == 812.0 ? 34 : 0)
 
