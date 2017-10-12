@@ -1,0 +1,21 @@
+//
+//  LZKit.pch
+//  LZKit
+//
+//  Created by 寕小陌 on 2017/10/12.
+//  Copyright © 2017年 寕小陌. All rights reserved.
+//
+
+#ifndef LZKit_pch
+#define LZKit_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
+#import <CoreGraphics/CoreGraphics.h>
+#import "LZKit.h"
+
+#endif /* LZKit_pch */
