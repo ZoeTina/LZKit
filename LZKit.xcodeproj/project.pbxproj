@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F530C2E1F96FDF8001815DD /* LZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F530C1E1F96FDF8001815DD /* LZNavigationController.m */; };
+		2F530C2F1F96FDF8001815DD /* LZRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F530C201F96FDF8001815DD /* LZRootViewController.m */; };
+		2F530C461F9733F6001815DD /* LZBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F530C451F9733F6001815DD /* LZBaseTableViewController.m */; };
+		2F530C4D1F97350F001815DD /* LZHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F530C4C1F97350F001815DD /* LZHomeViewController.m */; };
+		2F530C501F9737BF001815DD /* UIViewController+LZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F530C4F1F9737BF001815DD /* UIViewController+LZExtension.m */; };
+		2F530C5E1F9737C9001815DD /* LZDelegateHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F530C531F9737C8001815DD /* LZDelegateHandler.m */; };
+		2F530C5F1F9737C9001815DD /* LZNavigationBarConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F530C551F9737C8001815DD /* LZNavigationBarConfigure.m */; };
+		2F530C601F9737C9001815DD /* LZNavigationBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F530C571F9737C8001815DD /* LZNavigationBarViewController.m */; };
+		2F530C611F9737C9001815DD /* LZPopTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F530C591F9737C8001815DD /* LZPopTransitionAnimation.m */; };
+		2F530C621F9737C9001815DD /* LZPushTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F530C5B1F9737C8001815DD /* LZPushTransitionAnimation.m */; };
+		2F530C631F9737C9001815DD /* UINavigationController+LZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F530C5D1F9737C8001815DD /* UINavigationController+LZCategory.m */; };
 		D9FA85BDCF0B9F24F9050B5D /* Pods_LZKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACE43552A09BD713CA762A7E /* Pods_LZKit.framework */; };
 		E74476561F9660C9002EC7B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E74476551F9660C9002EC7B8 /* main.m */; };
 		E74476591F9660C9002EC7B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E74476581F9660C9002EC7B8 /* AppDelegate.m */; };
@@ -15,8 +26,6 @@
 		E74476641F9660C9002EC7B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E74476621F9660C9002EC7B8 /* LaunchScreen.storyboard */; };
 		E744766F1F9660C9002EC7B8 /* LZKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E744766E1F9660C9002EC7B8 /* LZKitTests.m */; };
 		E744767A1F9660C9002EC7B8 /* LZKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E74476791F9660C9002EC7B8 /* LZKitUITests.m */; };
-		E764B1251F96698D00402F31 /* LZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E764B11D1F96698D00402F31 /* LZNavigationController.m */; };
-		E764B1261F96698D00402F31 /* LZRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E764B11F1F96698D00402F31 /* LZRootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +47,30 @@
 
 /* Begin PBXFileReference section */
 		0DC009B45764B8BBB6AB0690 /* Pods-LZKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-LZKit/Pods-LZKit.release.xcconfig"; sourceTree = "<group>"; };
+		2F530C1D1F96FDF8001815DD /* LZNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZNavigationController.h; sourceTree = "<group>"; };
+		2F530C1E1F96FDF8001815DD /* LZNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZNavigationController.m; sourceTree = "<group>"; };
+		2F530C1F1F96FDF8001815DD /* LZRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZRootViewController.h; sourceTree = "<group>"; };
+		2F530C201F96FDF8001815DD /* LZRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZRootViewController.m; sourceTree = "<group>"; };
+		2F530C221F96FDF8001815DD /* LZKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZKit.h; sourceTree = "<group>"; };
+		2F530C251F96FDF8001815DD /* AppConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConstant.h; sourceTree = "<group>"; };
+		2F530C441F9733F6001815DD /* LZBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZBaseTableViewController.h; sourceTree = "<group>"; };
+		2F530C451F9733F6001815DD /* LZBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZBaseTableViewController.m; sourceTree = "<group>"; };
+		2F530C4B1F97350F001815DD /* LZHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZHomeViewController.h; sourceTree = "<group>"; };
+		2F530C4C1F97350F001815DD /* LZHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZHomeViewController.m; sourceTree = "<group>"; };
+		2F530C4E1F9737BF001815DD /* UIViewController+LZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LZExtension.h"; sourceTree = "<group>"; };
+		2F530C4F1F9737BF001815DD /* UIViewController+LZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LZExtension.m"; sourceTree = "<group>"; };
+		2F530C521F9737C8001815DD /* LZDelegateHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZDelegateHandler.h; sourceTree = "<group>"; };
+		2F530C531F9737C8001815DD /* LZDelegateHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZDelegateHandler.m; sourceTree = "<group>"; };
+		2F530C541F9737C8001815DD /* LZNavigationBarConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZNavigationBarConfigure.h; sourceTree = "<group>"; };
+		2F530C551F9737C8001815DD /* LZNavigationBarConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZNavigationBarConfigure.m; sourceTree = "<group>"; };
+		2F530C561F9737C8001815DD /* LZNavigationBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZNavigationBarViewController.h; sourceTree = "<group>"; };
+		2F530C571F9737C8001815DD /* LZNavigationBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZNavigationBarViewController.m; sourceTree = "<group>"; };
+		2F530C581F9737C8001815DD /* LZPopTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZPopTransitionAnimation.h; sourceTree = "<group>"; };
+		2F530C591F9737C8001815DD /* LZPopTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZPopTransitionAnimation.m; sourceTree = "<group>"; };
+		2F530C5A1F9737C8001815DD /* LZPushTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZPushTransitionAnimation.h; sourceTree = "<group>"; };
+		2F530C5B1F9737C8001815DD /* LZPushTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZPushTransitionAnimation.m; sourceTree = "<group>"; };
+		2F530C5C1F9737C8001815DD /* UINavigationController+LZCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+LZCategory.h"; sourceTree = "<group>"; };
+		2F530C5D1F9737C8001815DD /* UINavigationController+LZCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+LZCategory.m"; sourceTree = "<group>"; };
 		62F61F2CD06464E91E9808D7 /* Pods-LZKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LZKit/Pods-LZKit.debug.xcconfig"; sourceTree = "<group>"; };
 		ACE43552A09BD713CA762A7E /* Pods_LZKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E74476511F9660C9002EC7B8 /* LZKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,12 +87,6 @@
 		E74476751F9660C9002EC7B8 /* LZKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LZKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E74476791F9660C9002EC7B8 /* LZKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZKitUITests.m; sourceTree = "<group>"; };
 		E744767B1F9660C9002EC7B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E764B11C1F96698D00402F31 /* LZNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZNavigationController.h; sourceTree = "<group>"; };
-		E764B11D1F96698D00402F31 /* LZNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZNavigationController.m; sourceTree = "<group>"; };
-		E764B11E1F96698D00402F31 /* LZRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZRootViewController.h; sourceTree = "<group>"; };
-		E764B11F1F96698D00402F31 /* LZRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZRootViewController.m; sourceTree = "<group>"; };
-		E764B1211F96698D00402F31 /* LZKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZKit.h; sourceTree = "<group>"; };
-		E764B1231F96698D00402F31 /* AppConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConstant.h; sourceTree = "<group>"; };
 		E764B1241F96698D00402F31 /* LZKit.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZKit.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +116,133 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F530C151F96FDF8001815DD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2F530C161F96FDF8001815DD /* Application */,
+				2F530C211F96FDF8001815DD /* Basic */,
+				2F530C231F96FDF8001815DD /* General(通用类) */,
+				2F530C241F96FDF8001815DD /* Macro(宏定义类) */,
+				2F530C261F96FDF8001815DD /* UISections(各个模块) */,
+				2F530C271F96FDF8001815DD /* Utilities */,
+				2F530C2A1F96FDF8001815DD /* Vendors(第三方) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2F530C161F96FDF8001815DD /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				2F530C511F9737C8001815DD /* Application(扩展) */,
+				2F530C1D1F96FDF8001815DD /* LZNavigationController.h */,
+				2F530C1E1F96FDF8001815DD /* LZNavigationController.m */,
+				2F530C1F1F96FDF8001815DD /* LZRootViewController.h */,
+				2F530C201F96FDF8001815DD /* LZRootViewController.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		2F530C211F96FDF8001815DD /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				2F530C221F96FDF8001815DD /* LZKit.h */,
+				2F530C441F9733F6001815DD /* LZBaseTableViewController.h */,
+				2F530C451F9733F6001815DD /* LZBaseTableViewController.m */,
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
+		2F530C231F96FDF8001815DD /* General(通用类) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "General(通用类)";
+			sourceTree = "<group>";
+		};
+		2F530C241F96FDF8001815DD /* Macro(宏定义类) */ = {
+			isa = PBXGroup;
+			children = (
+				2F530C251F96FDF8001815DD /* AppConstant.h */,
+			);
+			path = "Macro(宏定义类)";
+			sourceTree = "<group>";
+		};
+		2F530C261F96FDF8001815DD /* UISections(各个模块) */ = {
+			isa = PBXGroup;
+			children = (
+				2F530C471F9734B6001815DD /* Home(主页) */,
+			);
+			path = "UISections(各个模块)";
+			sourceTree = "<group>";
+		};
+		2F530C271F96FDF8001815DD /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2F530C4E1F9737BF001815DD /* UIViewController+LZExtension.h */,
+				2F530C4F1F9737BF001815DD /* UIViewController+LZExtension.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2F530C2A1F96FDF8001815DD /* Vendors(第三方) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Vendors(第三方)";
+			sourceTree = "<group>";
+		};
+		2F530C471F9734B6001815DD /* Home(主页) */ = {
+			isa = PBXGroup;
+			children = (
+				2F530C481F9734B6001815DD /* Controller */,
+				2F530C491F9734B6001815DD /* Model */,
+				2F530C4A1F9734B6001815DD /* View */,
+			);
+			path = "Home(主页)";
+			sourceTree = "<group>";
+		};
+		2F530C481F9734B6001815DD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2F530C4B1F97350F001815DD /* LZHomeViewController.h */,
+				2F530C4C1F97350F001815DD /* LZHomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2F530C491F9734B6001815DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2F530C4A1F9734B6001815DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2F530C511F9737C8001815DD /* Application(扩展) */ = {
+			isa = PBXGroup;
+			children = (
+				2F530C521F9737C8001815DD /* LZDelegateHandler.h */,
+				2F530C531F9737C8001815DD /* LZDelegateHandler.m */,
+				2F530C541F9737C8001815DD /* LZNavigationBarConfigure.h */,
+				2F530C551F9737C8001815DD /* LZNavigationBarConfigure.m */,
+				2F530C561F9737C8001815DD /* LZNavigationBarViewController.h */,
+				2F530C571F9737C8001815DD /* LZNavigationBarViewController.m */,
+				2F530C581F9737C8001815DD /* LZPopTransitionAnimation.h */,
+				2F530C591F9737C8001815DD /* LZPopTransitionAnimation.m */,
+				2F530C5A1F9737C8001815DD /* LZPushTransitionAnimation.h */,
+				2F530C5B1F9737C8001815DD /* LZPushTransitionAnimation.m */,
+				2F530C5C1F9737C8001815DD /* UINavigationController+LZCategory.h */,
+				2F530C5D1F9737C8001815DD /* UINavigationController+LZCategory.m */,
+			);
+			path = "Application(扩展)";
+			sourceTree = "<group>";
+		};
 		5D6C579A928599484FAF92F3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,7 +285,7 @@
 		E74476531F9660C9002EC7B8 /* LZKit */ = {
 			isa = PBXGroup;
 			children = (
-				E764B11A1F96698D00402F31 /* Classes */,
+				2F530C151F96FDF8001815DD /* Classes */,
 				E764B1241F96698D00402F31 /* LZKit.pch */,
 				E74476571F9660C9002EC7B8 /* AppDelegate.h */,
 				E74476581F9660C9002EC7B8 /* AppDelegate.m */,
@@ -168,43 +322,6 @@
 				E744767B1F9660C9002EC7B8 /* Info.plist */,
 			);
 			path = LZKitUITests;
-			sourceTree = "<group>";
-		};
-		E764B11A1F96698D00402F31 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				E764B11B1F96698D00402F31 /* Application */,
-				E764B1201F96698D00402F31 /* Basic */,
-				E764B1221F96698D00402F31 /* Macro(宏定义类) */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		E764B11B1F96698D00402F31 /* Application */ = {
-			isa = PBXGroup;
-			children = (
-				E764B11C1F96698D00402F31 /* LZNavigationController.h */,
-				E764B11D1F96698D00402F31 /* LZNavigationController.m */,
-				E764B11E1F96698D00402F31 /* LZRootViewController.h */,
-				E764B11F1F96698D00402F31 /* LZRootViewController.m */,
-			);
-			path = Application;
-			sourceTree = "<group>";
-		};
-		E764B1201F96698D00402F31 /* Basic */ = {
-			isa = PBXGroup;
-			children = (
-				E764B1211F96698D00402F31 /* LZKit.h */,
-			);
-			path = Basic;
-			sourceTree = "<group>";
-		};
-		E764B1221F96698D00402F31 /* Macro(宏定义类) */ = {
-			isa = PBXGroup;
-			children = (
-				E764B1231F96698D00402F31 /* AppConstant.h */,
-			);
-			path = "Macro(宏定义类)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,12 +389,12 @@
 		E74476491F9660C9002EC7B8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "寕小陌";
 				TargetAttributes = {
 					E74476501F9660C9002EC7B8 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 8RL8MGBZ32;
+						DevelopmentTeam = 9TG69MYF39;
 						ProvisioningStyle = Automatic;
 					};
 					E74476691F9660C9002EC7B8 = {
@@ -400,10 +517,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F530C4D1F97350F001815DD /* LZHomeViewController.m in Sources */,
+				2F530C501F9737BF001815DD /* UIViewController+LZExtension.m in Sources */,
+				2F530C601F9737C9001815DD /* LZNavigationBarViewController.m in Sources */,
+				2F530C621F9737C9001815DD /* LZPushTransitionAnimation.m in Sources */,
+				2F530C5F1F9737C9001815DD /* LZNavigationBarConfigure.m in Sources */,
 				E74476591F9660C9002EC7B8 /* AppDelegate.m in Sources */,
+				2F530C461F9733F6001815DD /* LZBaseTableViewController.m in Sources */,
 				E74476561F9660C9002EC7B8 /* main.m in Sources */,
-				E764B1261F96698D00402F31 /* LZRootViewController.m in Sources */,
-				E764B1251F96698D00402F31 /* LZNavigationController.m in Sources */,
+				2F530C631F9737C9001815DD /* UINavigationController+LZCategory.m in Sources */,
+				2F530C5E1F9737C9001815DD /* LZDelegateHandler.m in Sources */,
+				2F530C611F9737C9001815DD /* LZPopTransitionAnimation.m in Sources */,
+				2F530C2F1F96FDF8001815DD /* LZRootViewController.m in Sources */,
+				2F530C2E1F96FDF8001815DD /* LZNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,7 +594,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -476,7 +604,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -516,7 +648,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -524,7 +658,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -553,7 +691,7 @@
 			baseConfigurationReference = 62F61F2CD06464E91E9808D7 /* Pods-LZKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8RL8MGBZ32;
+				DEVELOPMENT_TEAM = 9TG69MYF39;
 				GCC_PREFIX_HEADER = LZKit/LZKit.pch;
 				INFOPLIST_FILE = LZKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -567,7 +705,7 @@
 			baseConfigurationReference = 0DC009B45764B8BBB6AB0690 /* Pods-LZKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8RL8MGBZ32;
+				DEVELOPMENT_TEAM = 9TG69MYF39;
 				GCC_PREFIX_HEADER = LZKit/LZKit.pch;
 				INFOPLIST_FILE = LZKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -7,6 +7,7 @@
 //
 
 #import "LZRootViewController.h"
+#import "LZHomeViewController.h"
 
 @interface LZRootViewController ()<UITabBarControllerDelegate>
 
@@ -45,17 +46,18 @@
  */
 - (void)addAllChildVc {
     
-    UIViewController *vc1 = [[UIViewController alloc] init];
+    LZHomeViewController *vc1 = [[LZHomeViewController alloc] init];
     vc1.view.backgroundColor = kColorWithRGB(233, 233, 233);
+    vc1.title = @"主页";
     
     UIViewController *vc2 = [[UIViewController alloc] init];
-    vc2.view.backgroundColor = kColorWithRGB(123, 123, 123);
+    vc2.view.backgroundColor = kRandomColor;
     
     UIViewController *vc3 = [[UIViewController alloc] init];
-    vc3.view.backgroundColor = kColorWithRGB(111, 11, 11);
+    vc3.view.backgroundColor = kRandomColor;
     
     UIViewController *vc4 = [[UIViewController alloc] init];
-    vc4.view.backgroundColor = kColorWithRGB(180, 180, 180);
+    vc4.view.backgroundColor = kRandomColor;
     [self addOneChildVC:vc1
                   title:@"消息"
        normalImageNamed:@"tab_messages_nor"

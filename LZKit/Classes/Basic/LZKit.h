@@ -13,5 +13,6 @@
 
 #import "LZNavigationController.h"
 #import "AppConstant.h"
+#import "LZBaseTableViewController.h"
 
 #endif /* LZKit_h */
