@@ -27,6 +27,10 @@
 - (void) setupNavigationBarTheme {
     UIColor *BkColor = kColorWithRGB(211,0,0);
 
+    // 1.去掉背景图片和底部线条
+    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setShadowImage:[[UIImage alloc] init]];
+
     [self.navigationBar setBackgroundImage:[[LZNavigationController CreateImageWithColor:BkColor] resizableImageWithCapInsets:UIEdgeInsetsMake(5, 1, 5, 1)] forBarMetrics:UIBarMetricsDefault];
     self.navigationBar.tintColor = [UIColor whiteColor];
     //去掉导航栏下边的投影

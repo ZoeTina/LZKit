@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface LZRootViewController : UITabBarController
+@property (nonatomic, assign, nonnull)BOOL *lz_isJson;
 
 @end

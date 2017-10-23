@@ -10,7 +10,7 @@
 #import "LZHomeViewController.h"
 
 @interface LZRootViewController ()<UITabBarControllerDelegate>
-
+@property (nonatomic, strong, nonnull)NSArray *arrayTab;
 @end
 
 @implementation LZRootViewController
@@ -46,37 +46,46 @@
  */
 - (void)addAllChildVc {
     
-    LZHomeViewController *vc1 = [[LZHomeViewController alloc] init];
-    vc1.view.backgroundColor = kColorWithRGB(233, 233, 233);
-    vc1.title = @"主页";
-    
-    UIViewController *vc2 = [[UIViewController alloc] init];
-    vc2.view.backgroundColor = kRandomColor;
-    
-    UIViewController *vc3 = [[UIViewController alloc] init];
-    vc3.view.backgroundColor = kRandomColor;
-    
-    UIViewController *vc4 = [[UIViewController alloc] init];
-    vc4.view.backgroundColor = kRandomColor;
-    [self addOneChildVC:vc1
-                  title:@"消息"
-       normalImageNamed:@"tab_messages_nor"
-      selectedImageName:@"tab_messages_press"];
-    
-    [self addOneChildVC:vc2
-                  title:@"通讯录"
-       normalImageNamed:@"tab_groups_nor"
-      selectedImageName:@"tab_groups_press"];
-    
-    [self addOneChildVC:vc3
-                  title:@"发现"
-       normalImageNamed:@"tab_dynamic_nor"
-      selectedImageName:@"tab_dynamic_press"];
-    
-    [self addOneChildVC:vc4
-                  title:@"我"
-       normalImageNamed:@"tab_me_nor"
-      selectedImageName:@"tab_me_press"];
+    if (!self.lz_isJson) {
+        for (NSDictionary<NSString *, NSString *> *dicTab in self.arrayTab) {
+            [self addChildVc:dicTab[@"controllerName"]
+                       title:dicTab[@"title"]
+                       image:dicTab[@"imageName"]
+               selectedImage:dicTab[@"imageSelectName"]];
+        }
+    }else{
+        LZHomeViewController *vc1 = [[LZHomeViewController alloc] init];
+        vc1.view.backgroundColor = kColorWithRGB(233, 233, 233);
+        vc1.title = @"主页";
+        
+        UIViewController *vc2 = [[UIViewController alloc] init];
+        vc2.view.backgroundColor = kRandomColor;
+        
+        UIViewController *vc3 = [[UIViewController alloc] init];
+        vc3.view.backgroundColor = kRandomColor;
+        
+        UIViewController *vc4 = [[UIViewController alloc] init];
+        vc4.view.backgroundColor = kRandomColor;
+        [self addOneChildVC:vc1
+                      title:@"消息"
+           normalImageNamed:@"tab_messages_nor"
+          selectedImageName:@"tab_messages_press"];
+        
+        [self addOneChildVC:vc2
+                      title:@"通讯录"
+           normalImageNamed:@"tab_groups_nor"
+          selectedImageName:@"tab_groups_press"];
+        
+        [self addOneChildVC:vc3
+                      title:@"发现"
+           normalImageNamed:@"tab_dynamic_nor"
+          selectedImageName:@"tab_dynamic_press"];
+        
+        [self addOneChildVC:vc4
+                      title:@"我"
+           normalImageNamed:@"tab_me_nor"
+          selectedImageName:@"tab_me_press"];
+    }
 }
 
 /**
@@ -104,6 +113,63 @@
     LZNavigationController *navigation = [[LZNavigationController alloc] initWithRootViewController:childVc];
 //    nav.delegate = self;
     [self addChildViewController:navigation];
+}
+
+#pragma mark - private methods 私有方法
+
+/**
+ *  1.添加一个子控制器
+ *
+ *  @param childName            子控制器名称
+ *  @param title                标题
+ *  @param normalImageNamed     图片
+ *  @param selectedImageName    选中的图片
+ */
+- (void)addChildVc:(NSString *)childName
+             title:(NSString *)title
+             image:(NSString *)normalImageNamed
+     selectedImage:(NSString *)selectedImageName
+{
+    // 1.设置子控制器的默认设置
+    UIViewController *childVc = [NSClassFromString(childName) new];
+    childVc.title = title; // 同时设置tabbar和navigationBar的文字
+    [childVc.view setBackgroundColor:kRandomColor];
+    
+    // 2.设置子控制器的图片
+    childVc.tabBarItem.image = [[UIImage imageNamed:normalImageNamed] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    childVc.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    // 3.设置文字的样式
+    NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
+    textAttrs[NSForegroundColorAttributeName] = kColorWithRGB(121, 125, 130);
+    NSMutableDictionary *selectTextAttrs = [NSMutableDictionary dictionary];
+    
+    selectTextAttrs[NSForegroundColorAttributeName] = kColorWithRGB(0,189,39);
+    [childVc.tabBarItem setTitleTextAttributes:textAttrs forState:UIControlStateNormal];
+    [childVc.tabBarItem setTitleTextAttributes:selectTextAttrs forState:UIControlStateSelected];
+    
+    // 4.先给外面传进来的小控制器 包装 一个导航控制器
+    LZNavigationController *nav = [[LZNavigationController alloc] initWithRootViewController:childVc];
+    // 5.添加为子控制器
+    [self addChildViewController:nav];
+}
+
+- (NSArray *)arrayTab
+{
+    if (!_arrayTab) {
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"LZRootView"
+                                                         ofType:@"json"];
+        
+        NSData *jsonData = [NSData dataWithContentsOfFile:path
+                                                  options:NSDataReadingMappedIfSafe
+                                                    error:nil];
+        
+        _arrayTab = [NSJSONSerialization JSONObjectWithData:jsonData
+                                                    options:NSJSONReadingMutableContainers
+                                                      error:nil];
+        
+    }
+    return _arrayTab;
 }
 
 - (void)didReceiveMemoryWarning {

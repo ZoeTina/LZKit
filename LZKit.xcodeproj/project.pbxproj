@@ -18,6 +18,7 @@
 		2F530C611F9737C9001815DD /* LZPopTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F530C591F9737C8001815DD /* LZPopTransitionAnimation.m */; };
 		2F530C621F9737C9001815DD /* LZPushTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F530C5B1F9737C8001815DD /* LZPushTransitionAnimation.m */; };
 		2F530C631F9737C9001815DD /* UINavigationController+LZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F530C5D1F9737C8001815DD /* UINavigationController+LZCategory.m */; };
+		2FA386301F9DCA1A000E872B /* LZRootView.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FA3862F1F9DCA1A000E872B /* LZRootView.json */; };
 		D9FA85BDCF0B9F24F9050B5D /* Pods_LZKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACE43552A09BD713CA762A7E /* Pods_LZKit.framework */; };
 		E74476561F9660C9002EC7B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E74476551F9660C9002EC7B8 /* main.m */; };
 		E74476591F9660C9002EC7B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E74476581F9660C9002EC7B8 /* AppDelegate.m */; };
@@ -71,6 +72,7 @@
 		2F530C5B1F9737C8001815DD /* LZPushTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZPushTransitionAnimation.m; sourceTree = "<group>"; };
 		2F530C5C1F9737C8001815DD /* UINavigationController+LZCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+LZCategory.h"; sourceTree = "<group>"; };
 		2F530C5D1F9737C8001815DD /* UINavigationController+LZCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+LZCategory.m"; sourceTree = "<group>"; };
+		2FA3862F1F9DCA1A000E872B /* LZRootView.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LZRootView.json; sourceTree = "<group>"; };
 		62F61F2CD06464E91E9808D7 /* Pods-LZKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LZKit/Pods-LZKit.debug.xcconfig"; sourceTree = "<group>"; };
 		ACE43552A09BD713CA762A7E /* Pods_LZKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E74476511F9660C9002EC7B8 /* LZKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +140,7 @@
 				2F530C1E1F96FDF8001815DD /* LZNavigationController.m */,
 				2F530C1F1F96FDF8001815DD /* LZRootViewController.h */,
 				2F530C201F96FDF8001815DD /* LZRootViewController.m */,
+				2FA3862F1F9DCA1A000E872B /* LZRootView.json */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FA386301F9DCA1A000E872B /* LZRootView.json in Resources */,
 				E74476641F9660C9002EC7B8 /* LaunchScreen.storyboard in Resources */,
 				E74476611F9660C9002EC7B8 /* Assets.xcassets in Resources */,
 				E744765F1F9660C9002EC7B8 /* Main.storyboard in Resources */,

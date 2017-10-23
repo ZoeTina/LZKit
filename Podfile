@@ -1,5 +1,6 @@
-platform :'ios','9.0'
+platform :'ios','8.0'
 target 'LZKit' do
-  pod 'Masonry'
+    pod 'Masonry'
+    pod 'LZExtension'
   use_frameworks!
 end
