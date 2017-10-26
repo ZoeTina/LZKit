@@ -173,6 +173,7 @@
 		2F530C261F96FDF8001815DD /* UISections(各个模块) */ = {
 			isa = PBXGroup;
 			children = (
+				2FAAEEF01FA1D3D300F96A08 /* 第二页 */,
 				2F530C471F9734B6001815DD /* Home(主页) */,
 			);
 			path = "UISections(各个模块)";
@@ -244,6 +245,37 @@
 				2F530C5D1F9737C8001815DD /* UINavigationController+LZCategory.m */,
 			);
 			path = "Application(扩展)";
+			sourceTree = "<group>";
+		};
+		2FAAEEF01FA1D3D300F96A08 /* 第二页 */ = {
+			isa = PBXGroup;
+			children = (
+				2FAAEEF31FA1D4B100F96A08 /* Controller */,
+				2FAAEEF21FA1D4B100F96A08 /* Model */,
+				2FAAEEF11FA1D4B100F96A08 /* View */,
+			);
+			path = "第二页";
+			sourceTree = "<group>";
+		};
+		2FAAEEF11FA1D4B100F96A08 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2FAAEEF21FA1D4B100F96A08 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2FAAEEF31FA1D4B100F96A08 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		5D6C579A928599484FAF92F3 /* Pods */ = {
@@ -488,10 +520,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LZKit/Pods-LZKit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -698,6 +732,7 @@
 				DEVELOPMENT_TEAM = 9TG69MYF39;
 				GCC_PREFIX_HEADER = LZKit/LZKit.pch;
 				INFOPLIST_FILE = LZKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Triste.LZKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -712,6 +747,7 @@
 				DEVELOPMENT_TEAM = 9TG69MYF39;
 				GCC_PREFIX_HEADER = LZKit/LZKit.pch;
 				INFOPLIST_FILE = LZKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Triste.LZKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";

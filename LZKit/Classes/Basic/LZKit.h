@@ -15,4 +15,6 @@
 #import "AppConstant.h"
 #import "LZBaseTableViewController.h"
 
+#import "MJExtension.h"
+
 #endif /* LZKit_h */

@@ -74,7 +74,7 @@
     //        NSString *area_detail = self.secondColumnModel.filter.year_detail;
     //        NSArray *selectArr = [area_detail componentsSeparatedByString:@","];
     //
-    NSMutableArray *mb = [[NSMutableArray alloc] init];
+//    NSMutableArray *mb = [[NSMutableArray alloc] init];
     //        NSMutableArray *seArray = [[NSMutableArray alloc] init];
     //        for (int i=0;i<selectArr.count;i++) {
     //            [seArray addObject:selectArr[i]];
