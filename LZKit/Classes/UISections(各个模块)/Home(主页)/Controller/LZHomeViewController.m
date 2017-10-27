@@ -2,17 +2,23 @@
 //  LZHomeViewController.m
 //  LZKit
 //
-//  Created by Ensem on 2017/10/18.
+//  Created by 寕小陌 on 2017/10/18.
 //  Copyright © 2017年 寕小陌. All rights reserved.
 //
 
 #import "LZHomeViewController.h"
+#import "LZHomeTableViewCell.h"
 
-@interface LZHomeViewController ()
+static NSString *CellIdentifier = @"LZHomeTableViewCell";
+
+@interface LZHomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) NSMutableArray *titles;
 @property (nonatomic, strong) NSMutableArray *classNames;
 
+/** 设置tableview */
+@property (nonatomic, strong) UITableView           *lzTableView;
+@property (nonatomic, strong) LZHomeTableViewCell   *lzCell;
 @end
 
 @implementation LZHomeViewController
@@ -20,15 +26,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.titles = @[].mutableCopy;
-    self.classNames = @[].mutableCopy;
-    [self addCell:@"竖屏GIF播放" class:@""];
-    [self addCell:@"全屏GIF播放" class:@""];
-    [self addCell:@"头像选择" class:@""];
-    [self addCell:@"弹窗效果" class:@""];
-    [self addCell:@"拆分GIF" class:@""];
-    [self addCell:@"广播音频动画" class:@""];
-    [self.tableView reloadData];
+    [self.view addSubview:self.lzTableView];
+//    [Utils setExtraCellLineHidden:self.lzTableView];
+    int64_t delayInSeconds = 1.0;      // 延迟的时间
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        self.titles = @[].mutableCopy;
+        self.classNames = @[].mutableCopy;
+        [self addCell:@"竖屏GIF播放" class:@""];
+        [self addCell:@"全屏GIF播放" class:@""];
+        [self addCell:@"头像选择" class:@""];
+        [self addCell:@"弹窗效果" class:@""];
+        [self addCell:@"拆分GIF" class:@""];
+        [self addCell:@"广播音频动画" class:@""];
+        [self.lzTableView reloadData];
+    });
 }
 
 - (void)addCell:(NSString *)title class:(NSString *)className {
@@ -41,13 +53,16 @@
     return _titles.count;
 }
 
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return AUTOLAYOUTSIZE(50);
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LZHomeViewController"];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"YY"];
-    }
-    cell.textLabel.text = _titles[indexPath.row];
-    return cell;
+
+    self.lzCell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier
+                                                  forIndexPath:indexPath];
+    self.lzCell.titleLabel.text = _titles[indexPath.row];
+    return self.lzCell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -58,7 +73,7 @@
         ctrl.title = _titles[indexPath.row];
         [self.navigationController pushViewController:ctrl animated:YES];
     }
-    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self.lzTableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 - (void) dd{
@@ -123,6 +138,26 @@
     
 //    YYLog(@"mb - %@",mb);
 //    [_dictionary setValue:mb forKey:@"business"];
+}
+
+/// MARK:- ====================== 懒加载 ======================
+-(UITableView *)lzTableView{
+    if (!_lzTableView) {
+        
+        _lzTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, kNavBarHeight, kScreenWidth, kScreenHeight - kNavBarHeight - SafeAreaBottomHeight) style:UITableViewStyleGrouped];
+        if (@available(iOS 11.0, *)) {
+            _lzTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight - kNavBarHeight - SafeAreaBottomHeight) style:UITableViewStylePlain];
+        }
+        _lzTableView.showsVerticalScrollIndicator = false;
+        [_lzTableView registerNib:[UINib nibWithNibName:CellIdentifier bundle:nil]
+           forCellReuseIdentifier:CellIdentifier];
+        [_lzTableView setSeparatorInset:UIEdgeInsetsMake(13,0,0,0)];
+        _lzTableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
+        _lzTableView.delegate = self;
+        _lzTableView.dataSource = self;
+        _lzTableView.backgroundColor = [UIColor lz_colorWithHex:0xf2f2f2];
+    }
+    return _lzTableView;
 }
 
 - (void)didReceiveMemoryWarning {

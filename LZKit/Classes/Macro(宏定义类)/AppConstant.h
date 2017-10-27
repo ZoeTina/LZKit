@@ -46,6 +46,23 @@
 #define YYWeakSelf(type)  __weak typeof(type) weak##type = type;
 #define YYStrongSelf(type)  __strong typeof(type) type = weak##type;
 
+//View 圆角和加边框
+#define ViewBorderRadius(View, Radius, Width, Color)\
+\
+[View.layer setCornerRadius:(Radius)];\
+[View.layer setMasksToBounds:YES];\
+[View.layer setBorderWidth:(Width)];\
+[View.layer setBorderColor:[Color CGColor]]
+
+// View 圆角
+#define ViewRadius(View, Radius)\
+\
+[View.layer setCornerRadius:(Radius)];\
+[View.layer setMasksToBounds:YES]
+
+//拼接字符串
+#define NSStringFormat(format,...) [NSString stringWithFormat:format,##__VA_ARGS__]
+
 //获取屏幕 宽度、高度 -- //获取屏幕尺寸
 #define YYScreenWidth   ([UIScreen mainScreen].bounds.size.width)
 #define YYScreenHeight  ([UIScreen mainScreen].bounds.size.height)
@@ -55,13 +72,23 @@
 #define kScreenHeight   ([UIScreen mainScreen].bounds.size.height)
 #define kScreenBounds   ([UIScreen mainScreen].bounds)
 
+// 横屏宽度
+#define kCrossScreenWidth (ScreenWidth > ScreenHeight ?  ScreenHeight : ScreenWidth)
+// 横屏高度
+#define kCrossScreenHeight (ScreenWidth > ScreenHeight ?  ScreenWidth : ScreenHeight)
+
+#define kStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
+#define kNavBarHeight 44.0
+#define kTabBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49)
+#define kTopHeight (kStatusBarHeight + kNavBarHeight)
+
 // 依照iPhone6的尺寸设计
 #define GETPIXEL (YYScreenWidth / 375)
 #define AUTOLAYOUTSIZE(size) (size * GETPIXEL)
 //计算比例后的宽度
-#define AUTOLAYOUTSIZE_W(w)  (w*(YYScreenWidth/320.0f))
+#define AUTOLAYOUTSIZE_W(with)  (with*(YYScreenWidth/375.0f))
 //计算比例后高度
-#define AUTOLAYOUTSIZE_H(h)  (h*(YYScreenHeight/568.0f))
+#define AUTOLAYOUTSIZE_H(height)  (height*(YYScreenHeight/667.0f))
 
 // 读取本地图片资源
 #define kGetImage(imageName) [UIImage imageNamed:[NSString stringWithFormat:@"%@",imageName]]
@@ -83,6 +110,14 @@ cell.preservesSuperviewLayoutMargins = NO; \
 #define kArrayIsEmpty(array) (array == nil || [array isKindOfClass:[NSNull class]] || array.count == 0)
 //字典是否为空
 #define kDictIsEmpty(dic) (dic == nil || [dic isKindOfClass:[NSNull class]] || dic.allKeys == 0)
+#define kNumIsEmpty(num) (num !=nil && [num isKindOfClass:[NSNumber class]])
+
+//获取一段时间间隔
+#define kStartTime CFAbsoluteTime start = CFAbsoluteTimeGetCurrent();
+#define kEndTime  NSLog(@"Time: %f", CFAbsoluteTimeGetCurrent() - start)
+//打印当前方法名
+#define ITTDPRINTMETHODNAME() ITTDPRINT(@"%s", __PRETTY_FUNCTION__)
+
 //是否是空对象
 #define kObjectIsEmpty(_object) (_object == nil \
 || [_object isKindOfClass:[NSNull class]] \
@@ -95,13 +130,38 @@ cell.preservesSuperviewLayoutMargins = NO; \
 @implementation LZSYNTH_DUMMY_CLASS_ ## _name_ @end
 #endif
 
-//一些缩写
+//单例化一个类
+#define SINGLETON_FOR_HEADER(className) \
+\
++ (className *)shared##className;
+
+#define SINGLETON_FOR_CLASS(className) \
+\
++ (className *)shared##className { \
+static className *shared##className = nil; \
+static dispatch_once_t onceToken; \
+dispatch_once(&onceToken, ^{ \
+shared##className = [[self alloc] init]; \
+}); \
+return shared##className; \
+}
+
+// 一些缩写(获取系统对象)
 #define kApplication        [UIApplication sharedApplication]
 #define kMainWindow         [UIApplication sharedApplication].keyWindow
 #define kAppDelegate        [UIApplication sharedApplication].delegate
-//NSUserDefaults 实例化
+#define kRootViewController [UIApplication sharedApplication].delegate.window.rootViewController
+// NSUserDefaults 实例化
 #define kUserDefaults       [NSUserDefaults standardUserDefaults]
-// 2.获取通知中心
+// 获取通知中心
 #define kNotificationCenter [NSNotificationCenter defaultCenter]
 
+// 发送通知
+#define kPostNotification(name,obj) [[NSNotificationCenter defaultCenter] postNotificationName:name object:obj];
+
+#define kStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
+
+#define kNavBarHeight 44.0
+#define kTabBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49)
+#define kTopHeight (kStatusBarHeight + kNavBarHeight)
 #endif /* AppConstant_h */

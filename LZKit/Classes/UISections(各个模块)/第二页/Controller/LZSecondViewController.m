@@ -1,21 +1,22 @@
 //
-//  LZBaseTableViewController.m
+//  LZSecondViewController.m
 //  LZKit
 //
-//  Created by 寕小陌 on 2017/10/18.
+//  Created by 寕小陌 on 2017/10/27.
 //  Copyright © 2017年 寕小陌. All rights reserved.
 //
 
-#import "LZBaseTableViewController.h"
+#import "LZSecondViewController.h"
 
-@interface LZBaseTableViewController ()
+@interface LZSecondViewController ()
 
 @end
 
-@implementation LZBaseTableViewController
+@implementation LZSecondViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {
