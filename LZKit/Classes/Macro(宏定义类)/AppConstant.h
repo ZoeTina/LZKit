@@ -43,8 +43,8 @@
 #define MAIN(block) dispatch_async(dispatch_get_main_queue(),block)
 
 // 6.弱引用/强引用
-#define YYWeakSelf(type)  __weak typeof(type) weak##type = type;
-#define YYStrongSelf(type)  __strong typeof(type) type = weak##type;
+#define LZWeakSelf(type)  __weak typeof(type) weak##type = type;
+#define LZStrongSelf(type)  __strong typeof(type) type = weak##type;
 
 //View 圆角和加边框
 #define ViewBorderRadius(View, Radius, Width, Color)\
@@ -81,7 +81,7 @@
 #define kNavBarHeight 44.0
 #define kTabBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49)
 #define kTopHeight (kStatusBarHeight + kNavBarHeight)
-
+#define kiPhoneX ((kNavBarHeight == 88) ? YES : NO)
 // 依照iPhone6的尺寸设计
 #define GETPIXEL (YYScreenWidth / 375)
 #define AUTOLAYOUTSIZE(size) (size * GETPIXEL)

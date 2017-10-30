@@ -18,5 +18,5 @@
 
 #import "LZExtensions.h"
 #import "MJExtension.h"
-
+#import "UIImageView+WebCache.h"
 #endif /* LZKit_h */

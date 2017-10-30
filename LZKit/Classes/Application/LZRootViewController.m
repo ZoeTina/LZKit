@@ -8,6 +8,7 @@
 
 #import "LZRootViewController.h"
 #import "LZHomeViewController.h"
+#import "LZLiveViewController.h"
 
 @interface LZRootViewController ()<UITabBarControllerDelegate>
 @property (nonatomic, strong, nonnull)NSArray *arrayTab;
@@ -61,7 +62,7 @@
         UIViewController *vc2 = [[UIViewController alloc] init];
         vc2.view.backgroundColor = kRandomColor;
         
-        UIViewController *vc3 = [[UIViewController alloc] init];
+        LZLiveViewController *vc3 = [[LZLiveViewController alloc] init];
         vc3.view.backgroundColor = kRandomColor;
         
         UIViewController *vc4 = [[UIViewController alloc] init];

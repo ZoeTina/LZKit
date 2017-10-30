@@ -59,6 +59,15 @@
 		2F8507C61FA339E2005E26D9 /* UIViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F85079E1FA339E2005E26D9 /* UIViewController+Extension.m */; };
 		2F8507C71FA339E2005E26D9 /* UIWebView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8507A11FA339E2005E26D9 /* UIWebView+Extension.m */; };
 		2F8507C81FA339E2005E26D9 /* UIWindow+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8507A31FA339E2005E26D9 /* UIWindow+Extension.m */; };
+		2F8A49C91FA6D07D00A535CD /* LZLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8A49C81FA6D07D00A535CD /* LZLiveViewController.m */; };
+		2F8A49D01FA6D25900A535CD /* LZPageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8A49CC1FA6D25900A535CD /* LZPageContentView.m */; };
+		2F8A49D11FA6D25900A535CD /* LZSegmentTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8A49CF1FA6D25900A535CD /* LZSegmentTitleView.m */; };
+		2F8A49D51FA6D3C700A535CD /* LZTeleplayCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8A49D21FA6D3C700A535CD /* LZTeleplayCollectionViewCell.m */; };
+		2F8A49D61FA6D3C700A535CD /* LZTeleplayCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F8A49D31FA6D3C700A535CD /* LZTeleplayCollectionViewCell.xib */; };
+		2F8A49DD1FA6E79600A535CD /* LZRecommandCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8A49DB1FA6E79600A535CD /* LZRecommandCollectionViewCell.m */; };
+		2F8A49DE1FA6E79600A535CD /* LZRecommandCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F8A49DC1FA6E79600A535CD /* LZRecommandCollectionViewCell.xib */; };
+		2F8A49E31FA707A300A535CD /* LZRecommandReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8A49E11FA707A300A535CD /* LZRecommandReusableView.m */; };
+		2F8A49E41FA707A300A535CD /* LZRecommandReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F8A49E21FA707A300A535CD /* LZRecommandReusableView.xib */; };
 		2FA386301F9DCA1A000E872B /* LZRootView.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FA3862F1F9DCA1A000E872B /* LZRootView.json */; };
 		D9FA85BDCF0B9F24F9050B5D /* Pods_LZKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACE43552A09BD713CA762A7E /* Pods_LZKit.framework */; };
 		E74476561F9660C9002EC7B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E74476551F9660C9002EC7B8 /* main.m */; };
@@ -195,6 +204,22 @@
 		2F8507A21FA339E2005E26D9 /* UIWindow+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Extension.h"; sourceTree = "<group>"; };
 		2F8507A31FA339E2005E26D9 /* UIWindow+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Extension.m"; sourceTree = "<group>"; };
 		2F8507C91FA33A0D005E26D9 /* LZExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZExtensions.h; sourceTree = "<group>"; };
+		2F8A49C71FA6D07D00A535CD /* LZLiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZLiveViewController.h; sourceTree = "<group>"; };
+		2F8A49C81FA6D07D00A535CD /* LZLiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZLiveViewController.m; sourceTree = "<group>"; };
+		2F8A49CB1FA6D25900A535CD /* LZPageContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZPageContentView.h; sourceTree = "<group>"; };
+		2F8A49CC1FA6D25900A535CD /* LZPageContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZPageContentView.m; sourceTree = "<group>"; };
+		2F8A49CD1FA6D25900A535CD /* LZScrollContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZScrollContentView.h; sourceTree = "<group>"; };
+		2F8A49CE1FA6D25900A535CD /* LZSegmentTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZSegmentTitleView.h; sourceTree = "<group>"; };
+		2F8A49CF1FA6D25900A535CD /* LZSegmentTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZSegmentTitleView.m; sourceTree = "<group>"; };
+		2F8A49D21FA6D3C700A535CD /* LZTeleplayCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZTeleplayCollectionViewCell.m; sourceTree = "<group>"; };
+		2F8A49D31FA6D3C700A535CD /* LZTeleplayCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZTeleplayCollectionViewCell.xib; sourceTree = "<group>"; };
+		2F8A49D41FA6D3C700A535CD /* LZTeleplayCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZTeleplayCollectionViewCell.h; sourceTree = "<group>"; };
+		2F8A49DA1FA6E79500A535CD /* LZRecommandCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZRecommandCollectionViewCell.h; sourceTree = "<group>"; };
+		2F8A49DB1FA6E79600A535CD /* LZRecommandCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZRecommandCollectionViewCell.m; sourceTree = "<group>"; };
+		2F8A49DC1FA6E79600A535CD /* LZRecommandCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LZRecommandCollectionViewCell.xib; sourceTree = "<group>"; };
+		2F8A49E01FA707A300A535CD /* LZRecommandReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZRecommandReusableView.h; sourceTree = "<group>"; };
+		2F8A49E11FA707A300A535CD /* LZRecommandReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZRecommandReusableView.m; sourceTree = "<group>"; };
+		2F8A49E21FA707A300A535CD /* LZRecommandReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LZRecommandReusableView.xib; sourceTree = "<group>"; };
 		2FA3862F1F9DCA1A000E872B /* LZRootView.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LZRootView.json; sourceTree = "<group>"; };
 		62F61F2CD06464E91E9808D7 /* Pods-LZKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LZKit/Pods-LZKit.debug.xcconfig"; sourceTree = "<group>"; };
 		ACE43552A09BD713CA762A7E /* Pods_LZKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -298,6 +323,8 @@
 		2F530C261F96FDF8001815DD /* UISections(各个模块) */ = {
 			isa = PBXGroup;
 			children = (
+				2F8A49DF1FA7076A00A535CD /* Templet(重用模板) */,
+				2F8A49C31FA6D04D00A535CD /* Live(直播) */,
 				2FAAEEF01FA1D3D300F96A08 /* 第二页 */,
 				2F530C471F9734B6001815DD /* Home(主页) */,
 			);
@@ -307,6 +334,7 @@
 		2F530C271F96FDF8001815DD /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				2F8A49CA1FA6D25900A535CD /* LZScrollContentView */,
 				2F8507581FA339E2005E26D9 /* LZExtension */,
 				2F530C4E1F9737BF001815DD /* UIViewController+LZExtension.h */,
 				2F530C4F1F9737BF001815DD /* UIViewController+LZExtension.m */,
@@ -471,6 +499,67 @@
 				2F8507A31FA339E2005E26D9 /* UIWindow+Extension.m */,
 			);
 			path = "Category-UIKit";
+			sourceTree = "<group>";
+		};
+		2F8A49C31FA6D04D00A535CD /* Live(直播) */ = {
+			isa = PBXGroup;
+			children = (
+				2F8A49C41FA6D04D00A535CD /* Controller */,
+				2F8A49C51FA6D04D00A535CD /* Model */,
+				2F8A49C61FA6D04D00A535CD /* View */,
+			);
+			path = "Live(直播)";
+			sourceTree = "<group>";
+		};
+		2F8A49C41FA6D04D00A535CD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2F8A49C71FA6D07D00A535CD /* LZLiveViewController.h */,
+				2F8A49C81FA6D07D00A535CD /* LZLiveViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2F8A49C51FA6D04D00A535CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2F8A49C61FA6D04D00A535CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F8A49D41FA6D3C700A535CD /* LZTeleplayCollectionViewCell.h */,
+				2F8A49D21FA6D3C700A535CD /* LZTeleplayCollectionViewCell.m */,
+				2F8A49D31FA6D3C700A535CD /* LZTeleplayCollectionViewCell.xib */,
+				2F8A49DA1FA6E79500A535CD /* LZRecommandCollectionViewCell.h */,
+				2F8A49DB1FA6E79600A535CD /* LZRecommandCollectionViewCell.m */,
+				2F8A49DC1FA6E79600A535CD /* LZRecommandCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2F8A49CA1FA6D25900A535CD /* LZScrollContentView */ = {
+			isa = PBXGroup;
+			children = (
+				2F8A49CB1FA6D25900A535CD /* LZPageContentView.h */,
+				2F8A49CC1FA6D25900A535CD /* LZPageContentView.m */,
+				2F8A49CD1FA6D25900A535CD /* LZScrollContentView.h */,
+				2F8A49CE1FA6D25900A535CD /* LZSegmentTitleView.h */,
+				2F8A49CF1FA6D25900A535CD /* LZSegmentTitleView.m */,
+			);
+			path = LZScrollContentView;
+			sourceTree = "<group>";
+		};
+		2F8A49DF1FA7076A00A535CD /* Templet(重用模板) */ = {
+			isa = PBXGroup;
+			children = (
+				2F8A49E01FA707A300A535CD /* LZRecommandReusableView.h */,
+				2F8A49E11FA707A300A535CD /* LZRecommandReusableView.m */,
+				2F8A49E21FA707A300A535CD /* LZRecommandReusableView.xib */,
+			);
+			path = "Templet(重用模板)";
 			sourceTree = "<group>";
 		};
 		2FAAEEF01FA1D3D300F96A08 /* 第二页 */ = {
@@ -702,10 +791,13 @@
 			files = (
 				2F8507521FA33644005E26D9 /* LZSecondViewController.xib in Resources */,
 				2FA386301F9DCA1A000E872B /* LZRootView.json in Resources */,
+				2F8A49D61FA6D3C700A535CD /* LZTeleplayCollectionViewCell.xib in Resources */,
+				2F8A49E41FA707A300A535CD /* LZRecommandReusableView.xib in Resources */,
 				2F8507571FA336AE005E26D9 /* LZHomeTableViewCell.xib in Resources */,
 				E74476641F9660C9002EC7B8 /* LaunchScreen.storyboard in Resources */,
 				E74476611F9660C9002EC7B8 /* Assets.xcassets in Resources */,
 				E744765F1F9660C9002EC7B8 /* Main.storyboard in Resources */,
+				2F8A49DE1FA6E79600A535CD /* LZRecommandCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -753,11 +845,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-LZKit/Pods-LZKit-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -786,11 +880,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F8A49E31FA707A300A535CD /* LZRecommandReusableView.m in Sources */,
 				2F85074D1FA335F7005E26D9 /* LZBaseViewController.m in Sources */,
 				2F8507AE1FA339E2005E26D9 /* NSObject+Extension.m in Sources */,
 				2F8507C51FA339E2005E26D9 /* UIView+Runtime.m in Sources */,
 				2F8507C11FA339E2005E26D9 /* UITextField+Extension.m in Sources */,
 				2F530C4D1F97350F001815DD /* LZHomeViewController.m in Sources */,
+				2F8A49C91FA6D07D00A535CD /* LZLiveViewController.m in Sources */,
 				2F8507561FA336AE005E26D9 /* LZHomeTableViewCell.m in Sources */,
 				2F8507C71FA339E2005E26D9 /* UIWebView+Extension.m in Sources */,
 				2F8507AC1FA339E2005E26D9 /* NSMutableDictionary+Extension.m in Sources */,
@@ -798,6 +894,8 @@
 				2F530C601F9737C9001815DD /* LZNavigationBarViewController.m in Sources */,
 				2F8507BA1FA339E2005E26D9 /* UIImage+Extension.m in Sources */,
 				2F8507B61FA339E2005E26D9 /* UIColor+Extension.m in Sources */,
+				2F8A49D11FA6D25900A535CD /* LZSegmentTitleView.m in Sources */,
+				2F8A49D51FA6D3C700A535CD /* LZTeleplayCollectionViewCell.m in Sources */,
 				2F8507B51FA339E2005E26D9 /* UIButton+Extensions.m in Sources */,
 				2F8507C81FA339E2005E26D9 /* UIWindow+Extension.m in Sources */,
 				2F8507C41FA339E2005E26D9 /* UIView+IBExtension.m in Sources */,
@@ -811,6 +909,7 @@
 				2F8507AA1FA339E2005E26D9 /* NSFileManager+Extension.m in Sources */,
 				E74476591F9660C9002EC7B8 /* AppDelegate.m in Sources */,
 				2F530C461F9733F6001815DD /* LZBaseTableViewController.m in Sources */,
+				2F8A49DD1FA6E79600A535CD /* LZRecommandCollectionViewCell.m in Sources */,
 				2F8507C01FA339E2005E26D9 /* UITableView+Extension.m in Sources */,
 				2F8507B31FA339E2005E26D9 /* UIBarButtonItem+Extension.m in Sources */,
 				2F8507BB1FA339E2005E26D9 /* UIImageView+Extension.m in Sources */,
@@ -828,6 +927,7 @@
 				2F8507BC1FA339E2005E26D9 /* UILabel+Extension.m in Sources */,
 				2F8507B81FA339E2005E26D9 /* UIDevice+Extension.m in Sources */,
 				2F8507AD1FA339E2005E26D9 /* NSNumber+Extension.m in Sources */,
+				2F8A49D01FA6D25900A535CD /* LZPageContentView.m in Sources */,
 				E74476561F9660C9002EC7B8 /* main.m in Sources */,
 				2F530C631F9737C9001815DD /* UINavigationController+LZCategory.m in Sources */,
 				2F8507B11FA339E2005E26D9 /* NSBundle+Extension.m in Sources */,
