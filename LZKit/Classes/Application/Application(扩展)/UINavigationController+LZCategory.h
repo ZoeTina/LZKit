@@ -2,7 +2,7 @@
 //  UINavigationController+LZCategory.h
 //  LZKit
 //
-//  Created by Ensem on 2017/10/18.
+//  Created by 寕小陌 on 2017/10/18.
 //  Copyright © 2017年 寕小陌. All rights reserved.
 //
 

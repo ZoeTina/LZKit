@@ -8,7 +8,10 @@
 
 #import "LZRootViewController.h"
 #import "LZHomeViewController.h"
+#import "LZSecondViewController.h"
+#import "LZExampleViewController.h"
 #import "LZLiveViewController.h"
+#import "LZSlidingCardViewController.h"
 
 @interface LZRootViewController ()<UITabBarControllerDelegate>
 @property (nonatomic, strong, nonnull)NSArray *arrayTab;
@@ -16,6 +19,7 @@
 
 @implementation LZRootViewController
 
+//APP生命周期中 只会执行一次
 + (void)initialize {
     
     // 默认字体颜色及选择字体颜色
@@ -47,7 +51,7 @@
  */
 - (void)addAllChildVc {
     
-    if (!self.lz_isJson) {
+    if (self.lz_isJson) {
         for (NSDictionary<NSString *, NSString *> *dicTab in self.arrayTab) {
             [self addChildVc:dicTab[@"controllerName"]
                        title:dicTab[@"title"]
@@ -56,36 +60,17 @@
         }
     }else{
         LZHomeViewController *vc1 = [[LZHomeViewController alloc] init];
-        vc1.view.backgroundColor = kColorWithRGB(233, 233, 233);
-        vc1.title = @"主页";
-        
-        UIViewController *vc2 = [[UIViewController alloc] init];
-        vc2.view.backgroundColor = kRandomColor;
-        
+//        LZSecondViewController *vc2 = [[LZSecondViewController alloc] init];
+        LZSlidingCardViewController *vc2 = [[LZSlidingCardViewController alloc] init];
         LZLiveViewController *vc3 = [[LZLiveViewController alloc] init];
-        vc3.view.backgroundColor = kRandomColor;
-        
-        UIViewController *vc4 = [[UIViewController alloc] init];
-        vc4.view.backgroundColor = kRandomColor;
-        [self addOneChildVC:vc1
-                      title:@"消息"
-           normalImageNamed:@"tab_messages_nor"
-          selectedImageName:@"tab_messages_press"];
-        
-        [self addOneChildVC:vc2
-                      title:@"通讯录"
-           normalImageNamed:@"tab_groups_nor"
-          selectedImageName:@"tab_groups_press"];
-        
-        [self addOneChildVC:vc3
-                      title:@"发现"
-           normalImageNamed:@"tab_dynamic_nor"
-          selectedImageName:@"tab_dynamic_press"];
-        
-        [self addOneChildVC:vc4
-                      title:@"我"
-           normalImageNamed:@"tab_me_nor"
-          selectedImageName:@"tab_me_press"];
+        LZExampleViewController *vc4 = [[LZExampleViewController alloc] init];
+        UIViewController *vc5 = [[UIViewController alloc] init];
+
+        [self addOneChildVC:vc1 title:@"消息" normalImageNamed:@"tab_messages_nor" selectedImageName:@"tab_messages_press"];
+        [self addOneChildVC:vc2 title:@"通讯录" normalImageNamed:@"tab_groups_nor" selectedImageName:@"tab_groups_press"];
+        [self addOneChildVC:vc3 title:@"发现" normalImageNamed:@"tab_dynamic_nor" selectedImageName:@"tab_dynamic_press"];
+        [self addOneChildVC:vc4 title:@"Demo" normalImageNamed:@"tab_groups_nor" selectedImageName:@"tab_groups_press"];
+        [self addOneChildVC:vc5 title:@"我" normalImageNamed:@"tab_me_nor" selectedImageName:@"tab_me_press"];
     }
 }
 
@@ -101,6 +86,8 @@
 - (void)addOneChildVC:(UIViewController *)childVc title:(NSString *)title normalImageNamed:(NSString *)normalImageNamed selectedImageName:(NSString *)selectedImageName {
     // 设置标题
     childVc.tabBarItem.title = title;
+    childVc.title = title;
+    childVc.view.backgroundColor = kColorWithRGB(233, 233, 233);
     // 设置图标
     childVc.tabBarItem.image = [[UIImage imageNamed:normalImageNamed]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     // 设置选中的图标
@@ -126,10 +113,7 @@
  *  @param normalImageNamed     图片
  *  @param selectedImageName    选中的图片
  */
-- (void)addChildVc:(NSString *)childName
-             title:(NSString *)title
-             image:(NSString *)normalImageNamed
-     selectedImage:(NSString *)selectedImageName
+- (void)addChildVc:(NSString *)childName title:(NSString *)title image:(NSString *)normalImageNamed selectedImage:(NSString *)selectedImageName
 {
     // 1.设置子控制器的默认设置
     UIViewController *childVc = [NSClassFromString(childName) new];

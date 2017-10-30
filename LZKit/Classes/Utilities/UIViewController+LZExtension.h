@@ -2,7 +2,7 @@
 //  UIViewController+LZExtension.h
 //  LZKit
 //
-//  Created by Ensem on 2017/7/17.
+//  Created by 寕小陌 on 2017/7/17.
 //  Copyright © 2017年 寕小陌. All rights reserved.
 //
 

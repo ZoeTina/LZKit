@@ -10,8 +10,16 @@
 
 @implementation UITableView (Extension)
 
-+ (instancetype _Nonnull)lz_initWithFrame:(CGRect)frame style:(UITableViewStyle)style cellSeparatorStyle:(UITableViewCellSeparatorStyle)cellSeparatorStyle separatorInset:(UIEdgeInsets)separatorInset dataSource:(id<UITableViewDataSource> _Nullable)dataSource delegate:(id<UITableViewDelegate> _Nullable)delegate {
++ (instancetype _Nonnull)lz_initWithFrame:(CGRect)frame
+                                    style:(UITableViewStyle)style
+                       cellSeparatorStyle:(UITableViewCellSeparatorStyle)cellSeparatorStyle
+                           separatorInset:(UIEdgeInsets)separatorInset
+             showsVerticalScrollIndicator:(BOOL)isIndicator
+                               dataSource:(id<UITableViewDataSource> _Nullable)dataSource
+                                 delegate:(id<UITableViewDelegate> _Nullable)delegate {
     UITableView *tableView = [[UITableView alloc] initWithFrame:frame style:style];
+    tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
+    tableView.backgroundColor = [UIColor lz_colorWithHex:0xf2f2f2];
     [tableView setSeparatorStyle:cellSeparatorStyle];
     [tableView setSeparatorInset:separatorInset];
     [tableView setDelegate:delegate];

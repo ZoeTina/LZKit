@@ -23,6 +23,7 @@
 #define kSysVersion      ([[[UIDevice currentDevice] systemVersion] floatValue])
 
 #define SafeAreaBottomHeight (kScreenHeight == 812.0 ? 34 : 0)
+#define SafeAreaHeight 20
 
 #define kColorWithRGBA(r, g, b, a)[UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
 #define kColorWithRGB(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
@@ -34,7 +35,7 @@
 
 #define textColorNormal kColorWithRGB(0, 0, 0)
 #define textColorSelected kColorWithRGB(42, 180, 228)
-#define lineColor kColorWithRGB(215, 215, 215)
+#define lineColors kColorWithRGB(215, 215, 215)
 
 #define font(x) [UIFont fontWithName:@"PingFangSC-Regular" size:x]
 

@@ -2,7 +2,7 @@
 //  LZNavigationController.m
 //  LZKit
 //
-//  Created by Ensem on 2017/10/12.
+//  Created by 寕小陌 on 2017/10/12.
 //  Copyright © 2017年 寕小陌. All rights reserved.
 //
 
@@ -63,14 +63,14 @@
         self.interactivePopGestureRecognizer.delegate = self;
         viewController.hidesBottomBarWhenPushed = YES;
         
-//        UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+        UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
         
         // 设置导航栏的按钮
-//        UIBarButtonItem *backButton = [UIBarButtonItem itemWithImageName:@"nav_back_copy"
-//                                                           highImageName:@"nav_back_copy"
-//                                                                  target:self
-//                                                                  action:@selector(back)];
-//        viewController.navigationItem.leftBarButtonItems = @[negativeSpacer, backButton];
+        UIBarButtonItem *backButton = [UIBarButtonItem lz_itemWithImageName:@"nav_back_copy"
+                                                           highImageName:@"nav_back_copy"
+                                                                  target:self
+                                                                  action:@selector(back)];
+        viewController.navigationItem.leftBarButtonItems = @[negativeSpacer, backButton];
         
         // 就有滑动返回功能
         self.interactivePopGestureRecognizer.delegate = nil;

@@ -27,8 +27,8 @@ static NSString *CellIdentifier = @"LZHomeTableViewCell";
     [super viewDidLoad];
     
     [self.view addSubview:self.lzTableView];
-//    [Utils setExtraCellLineHidden:self.lzTableView];
-    int64_t delayInSeconds = 1.0;      // 延迟的时间
+    [LZUtils lz_setExtraCellLineHidden:self.lzTableView];
+    int64_t delayInSeconds = 0.1;      // 延迟的时间
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
         self.titles = @[].mutableCopy;
@@ -54,7 +54,7 @@ static NSString *CellIdentifier = @"LZHomeTableViewCell";
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return AUTOLAYOUTSIZE(50);
+    return AUTOLAYOUTSIZE(44);
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -143,18 +143,17 @@ static NSString *CellIdentifier = @"LZHomeTableViewCell";
 /// MARK:- ====================== 懒加载 ======================
 -(UITableView *)lzTableView{
     if (!_lzTableView) {
-        
-        _lzTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, kNavBarHeight, kScreenWidth, kScreenHeight - kNavBarHeight - SafeAreaBottomHeight) style:UITableViewStyleGrouped];
-        if (@available(iOS 11.0, *)) {
-            _lzTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight - kNavBarHeight - SafeAreaBottomHeight) style:UITableViewStylePlain];
-        }
-        _lzTableView.showsVerticalScrollIndicator = false;
+        CGRect frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight - kTopHeight - SafeAreaBottomHeight);
+        _lzTableView = [UITableView lz_initWithFrame:frame
+                                               style:UITableViewStylePlain
+                                  cellSeparatorStyle:UITableViewCellSeparatorStyleSingleLine
+                                      separatorInset:UIEdgeInsetsMake(13, 0, 0, 0)
+                        showsVerticalScrollIndicator:false
+                                          dataSource:self
+                                            delegate:self];
         [_lzTableView registerNib:[UINib nibWithNibName:CellIdentifier bundle:nil]
            forCellReuseIdentifier:CellIdentifier];
-        [_lzTableView setSeparatorInset:UIEdgeInsetsMake(13,0,0,0)];
         _lzTableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
-        _lzTableView.delegate = self;
-        _lzTableView.dataSource = self;
         _lzTableView.backgroundColor = [UIColor lz_colorWithHex:0xf2f2f2];
     }
     return _lzTableView;

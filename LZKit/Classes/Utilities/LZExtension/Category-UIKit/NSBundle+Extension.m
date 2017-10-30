@@ -1,9 +1,9 @@
 //
 //  NSBundle+SCExtension.m
-//  SiChuanFocus
+//  LZExtension
 //
-//  Created by Ensem on 2017/6/20.
-//  Copyright © 2017年 Ensem. All rights reserved.
+//  Created by 寕小陌 on 2017/6/20.
+//  Copyright © 2017年 寕小陌. All rights reserved.
 //
 
 #import "NSBundle+Extension.h"

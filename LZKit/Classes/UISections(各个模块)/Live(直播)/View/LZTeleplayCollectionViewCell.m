@@ -2,7 +2,7 @@
 //  LZTeleplayCollectionViewCell.m
 //  LZKit
 //
-//  Created by Ensem on 2017/9/4.
+//  Created by 寕小陌 on 2017/9/4.
 //  Copyright © 2017年 cara. All rights reserved.
 //
 

@@ -20,6 +20,7 @@
  *  @param style              TableView的样式
  *  @param cellSeparatorStyle Cell分割线样式
  *  @param separatorInset     Cell分割线内切
+ *  @param isIndicator        是否显示滚动条
  *  @param dataSource         TableView的数据源
  *  @param delegate           TableView的代理
  *
@@ -29,6 +30,7 @@
                                     style:(UITableViewStyle)style
                        cellSeparatorStyle:(UITableViewCellSeparatorStyle)cellSeparatorStyle
                            separatorInset:(UIEdgeInsets)separatorInset
+             showsVerticalScrollIndicator:(BOOL)isIndicator
                                dataSource:(id <UITableViewDataSource> _Nullable)dataSource
                                  delegate:(id <UITableViewDelegate> _Nullable)delegate;
 
