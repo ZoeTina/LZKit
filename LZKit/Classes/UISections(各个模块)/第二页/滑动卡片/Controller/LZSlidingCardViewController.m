@@ -90,9 +90,9 @@
 {
     _dataModelArray = [NSMutableArray array];
     
-    for (int i = 0; i < 20; i++) {
-        NSDictionary *dict = @{@"image" : [NSString stringWithFormat:@"photo_sample_0%d",i%7 + 1],
-                               @"name" : @"LZSlidingCardContainer Demo"};
+    for (int i = 0; i < 200; i++) {
+        NSDictionary *dict = @{@"image" : [NSString stringWithFormat:@"WechatIMG%d.jpeg",i%6 + 1],
+                               @"name" : @"仿探探左右滑动效果"};
         [_dataModelArray addObject:dict];
     }
 }
@@ -107,14 +107,14 @@
         @weakify(self);
         [_container lz_movePositionWithDirection:LZSlidingDirectionDown isAutomatic:YES undoHandler:^{
             UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@""
-                                                                                     message:@"Do you want to reset?"
+                                                                                     message:@"你想要撤销吗?"
                                                                               preferredStyle:UIAlertControllerStyleAlert];
             
-            [alertController addAction:[UIAlertAction actionWithTitle:@"NO" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+            [alertController addAction:[UIAlertAction actionWithTitle:@"不用了" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
                 [weak_self.container lz_movePositionWithDirection:LZSlidingDirectionDown isAutomatic:YES];
             }]];
             
-            [alertController addAction:[UIAlertAction actionWithTitle:@"YES" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+            [alertController addAction:[UIAlertAction actionWithTitle:@"蒽蒽" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
                 [weak_self.container lz_movePositionWithDirection:LZSlidingDirectionDefault isAutomatic:YES];
             }]];
             
