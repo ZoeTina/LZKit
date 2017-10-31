@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F11CA491FA8141800AEACF6 /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F11CA221FA8141800AEACF6 /* NSString+Emoji.m */; };
+		2F11CA4A1FA8141800AEACF6 /* ChatKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F11CA241FA8141800AEACF6 /* ChatKeyBoard.m */; };
+		2F11CA4B1FA8141900AEACF6 /* ChatToolBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F11CA281FA8141800AEACF6 /* ChatToolBarItem.m */; };
+		2F11CA4C1FA8141900AEACF6 /* FaceThemeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F11CA2A1FA8141800AEACF6 /* FaceThemeModel.m */; };
+		2F11CA4D1FA8141900AEACF6 /* MoreItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F11CA2C1FA8141800AEACF6 /* MoreItem.m */; };
+		2F11CA4E1FA8141900AEACF6 /* emotion.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F11CA2E1FA8141800AEACF6 /* emotion.plist */; };
+		2F11CA4F1FA8141900AEACF6 /* face.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F11CA2F1FA8141800AEACF6 /* face.plist */; };
+		2F11CA501FA8141900AEACF6 /* systemEmoji.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F11CA301FA8141800AEACF6 /* systemEmoji.plist */; };
+		2F11CA511FA8141900AEACF6 /* FaceButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F11CA341FA8141800AEACF6 /* FaceButton.m */; };
+		2F11CA521FA8141900AEACF6 /* FacePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F11CA361FA8141800AEACF6 /* FacePageView.m */; };
+		2F11CA531FA8141900AEACF6 /* FacePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F11CA381FA8141800AEACF6 /* FacePanel.m */; };
+		2F11CA541FA8141900AEACF6 /* FaceThemeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F11CA3A1FA8141800AEACF6 /* FaceThemeView.m */; };
+		2F11CA551FA8141900AEACF6 /* PanelBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F11CA3C1FA8141800AEACF6 /* PanelBottomView.m */; };
+		2F11CA561FA8141900AEACF6 /* MorePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F11CA3F1FA8141800AEACF6 /* MorePanel.m */; };
+		2F11CA571FA8141900AEACF6 /* ChatToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F11CA421FA8141800AEACF6 /* ChatToolBar.m */; };
+		2F11CA581FA8141900AEACF6 /* OfficialAccountToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F11CA441FA8141800AEACF6 /* OfficialAccountToolbar.m */; };
+		2F11CA591FA8141900AEACF6 /* RFRecordButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F11CA461FA8141800AEACF6 /* RFRecordButton.m */; };
+		2F11CA5A1FA8141900AEACF6 /* RFTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F11CA481FA8141800AEACF6 /* RFTextView.m */; };
+		2F11CA611FA8155B00AEACF6 /* LZMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F11CA601FA8155B00AEACF6 /* LZMineViewController.m */; };
+		2F11CA641FA8160F00AEACF6 /* LZMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F11CA631FA8160F00AEACF6 /* LZMessageViewController.m */; };
 		D9FA85BDCF0B9F24F9050B5D /* Pods_LZKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACE43552A09BD713CA762A7E /* Pods_LZKit.framework */; };
 		E74476561F9660C9002EC7B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E74476551F9660C9002EC7B8 /* main.m */; };
 		E74476591F9660C9002EC7B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E74476581F9660C9002EC7B8 /* AppDelegate.m */; };
@@ -743,6 +763,44 @@
 
 /* Begin PBXFileReference section */
 		0DC009B45764B8BBB6AB0690 /* Pods-LZKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-LZKit/Pods-LZKit.release.xcconfig"; sourceTree = "<group>"; };
+		2F11CA211FA8141800AEACF6 /* NSString+Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
+		2F11CA221FA8141800AEACF6 /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
+		2F11CA231FA8141800AEACF6 /* ChatKeyBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatKeyBoard.h; sourceTree = "<group>"; };
+		2F11CA241FA8141800AEACF6 /* ChatKeyBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatKeyBoard.m; sourceTree = "<group>"; };
+		2F11CA251FA8141800AEACF6 /* ChatKeyBoardMacroDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatKeyBoardMacroDefine.h; sourceTree = "<group>"; };
+		2F11CA271FA8141800AEACF6 /* ChatToolBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatToolBarItem.h; sourceTree = "<group>"; };
+		2F11CA281FA8141800AEACF6 /* ChatToolBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatToolBarItem.m; sourceTree = "<group>"; };
+		2F11CA291FA8141800AEACF6 /* FaceThemeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceThemeModel.h; sourceTree = "<group>"; };
+		2F11CA2A1FA8141800AEACF6 /* FaceThemeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceThemeModel.m; sourceTree = "<group>"; };
+		2F11CA2B1FA8141800AEACF6 /* MoreItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreItem.h; sourceTree = "<group>"; };
+		2F11CA2C1FA8141800AEACF6 /* MoreItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreItem.m; sourceTree = "<group>"; };
+		2F11CA2E1FA8141800AEACF6 /* emotion.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = emotion.plist; sourceTree = "<group>"; };
+		2F11CA2F1FA8141800AEACF6 /* face.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = face.plist; sourceTree = "<group>"; };
+		2F11CA301FA8141800AEACF6 /* systemEmoji.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = systemEmoji.plist; sourceTree = "<group>"; };
+		2F11CA331FA8141800AEACF6 /* FaceButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceButton.h; sourceTree = "<group>"; };
+		2F11CA341FA8141800AEACF6 /* FaceButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceButton.m; sourceTree = "<group>"; };
+		2F11CA351FA8141800AEACF6 /* FacePageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacePageView.h; sourceTree = "<group>"; };
+		2F11CA361FA8141800AEACF6 /* FacePageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacePageView.m; sourceTree = "<group>"; };
+		2F11CA371FA8141800AEACF6 /* FacePanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacePanel.h; sourceTree = "<group>"; };
+		2F11CA381FA8141800AEACF6 /* FacePanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacePanel.m; sourceTree = "<group>"; };
+		2F11CA391FA8141800AEACF6 /* FaceThemeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceThemeView.h; sourceTree = "<group>"; };
+		2F11CA3A1FA8141800AEACF6 /* FaceThemeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceThemeView.m; sourceTree = "<group>"; };
+		2F11CA3B1FA8141800AEACF6 /* PanelBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanelBottomView.h; sourceTree = "<group>"; };
+		2F11CA3C1FA8141800AEACF6 /* PanelBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanelBottomView.m; sourceTree = "<group>"; };
+		2F11CA3E1FA8141800AEACF6 /* MorePanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MorePanel.h; sourceTree = "<group>"; };
+		2F11CA3F1FA8141800AEACF6 /* MorePanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MorePanel.m; sourceTree = "<group>"; };
+		2F11CA411FA8141800AEACF6 /* ChatToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatToolBar.h; sourceTree = "<group>"; };
+		2F11CA421FA8141800AEACF6 /* ChatToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatToolBar.m; sourceTree = "<group>"; };
+		2F11CA431FA8141800AEACF6 /* OfficialAccountToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfficialAccountToolbar.h; sourceTree = "<group>"; };
+		2F11CA441FA8141800AEACF6 /* OfficialAccountToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfficialAccountToolbar.m; sourceTree = "<group>"; };
+		2F11CA451FA8141800AEACF6 /* RFRecordButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFRecordButton.h; sourceTree = "<group>"; };
+		2F11CA461FA8141800AEACF6 /* RFRecordButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFRecordButton.m; sourceTree = "<group>"; };
+		2F11CA471FA8141800AEACF6 /* RFTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFTextView.h; sourceTree = "<group>"; };
+		2F11CA481FA8141800AEACF6 /* RFTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFTextView.m; sourceTree = "<group>"; };
+		2F11CA5F1FA8155B00AEACF6 /* LZMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZMineViewController.h; sourceTree = "<group>"; };
+		2F11CA601FA8155B00AEACF6 /* LZMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZMineViewController.m; sourceTree = "<group>"; };
+		2F11CA621FA8160F00AEACF6 /* LZMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZMessageViewController.h; sourceTree = "<group>"; };
+		2F11CA631FA8160F00AEACF6 /* LZMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZMessageViewController.m; sourceTree = "<group>"; };
 		62F61F2CD06464E91E9808D7 /* Pods-LZKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LZKit/Pods-LZKit.debug.xcconfig"; sourceTree = "<group>"; };
 		ACE43552A09BD713CA762A7E /* Pods_LZKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E74476511F9660C9002EC7B8 /* LZKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2160,6 +2218,138 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F11CA1F1FA8141800AEACF6 /* 群聊键盘 */ = {
+			isa = PBXGroup;
+			children = (
+				2F11CA201FA8141800AEACF6 /* Cagegory */,
+				2F11CA231FA8141800AEACF6 /* ChatKeyBoard.h */,
+				2F11CA241FA8141800AEACF6 /* ChatKeyBoard.m */,
+				2F11CA251FA8141800AEACF6 /* ChatKeyBoardMacroDefine.h */,
+				2F11CA261FA8141800AEACF6 /* Models */,
+				2F11CA2D1FA8141800AEACF6 /* plist */,
+				2F11CA311FA8141800AEACF6 /* Views */,
+			);
+			path = "群聊键盘";
+			sourceTree = "<group>";
+		};
+		2F11CA201FA8141800AEACF6 /* Cagegory */ = {
+			isa = PBXGroup;
+			children = (
+				2F11CA211FA8141800AEACF6 /* NSString+Emoji.h */,
+				2F11CA221FA8141800AEACF6 /* NSString+Emoji.m */,
+			);
+			path = Cagegory;
+			sourceTree = "<group>";
+		};
+		2F11CA261FA8141800AEACF6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2F11CA271FA8141800AEACF6 /* ChatToolBarItem.h */,
+				2F11CA281FA8141800AEACF6 /* ChatToolBarItem.m */,
+				2F11CA291FA8141800AEACF6 /* FaceThemeModel.h */,
+				2F11CA2A1FA8141800AEACF6 /* FaceThemeModel.m */,
+				2F11CA2B1FA8141800AEACF6 /* MoreItem.h */,
+				2F11CA2C1FA8141800AEACF6 /* MoreItem.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2F11CA2D1FA8141800AEACF6 /* plist */ = {
+			isa = PBXGroup;
+			children = (
+				2F11CA2E1FA8141800AEACF6 /* emotion.plist */,
+				2F11CA2F1FA8141800AEACF6 /* face.plist */,
+				2F11CA301FA8141800AEACF6 /* systemEmoji.plist */,
+			);
+			path = plist;
+			sourceTree = "<group>";
+		};
+		2F11CA311FA8141800AEACF6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2F11CA321FA8141800AEACF6 /* FacePanel */,
+				2F11CA3D1FA8141800AEACF6 /* MorePanel */,
+				2F11CA401FA8141800AEACF6 /* ToolBarPanel */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2F11CA321FA8141800AEACF6 /* FacePanel */ = {
+			isa = PBXGroup;
+			children = (
+				2F11CA331FA8141800AEACF6 /* FaceButton.h */,
+				2F11CA341FA8141800AEACF6 /* FaceButton.m */,
+				2F11CA351FA8141800AEACF6 /* FacePageView.h */,
+				2F11CA361FA8141800AEACF6 /* FacePageView.m */,
+				2F11CA371FA8141800AEACF6 /* FacePanel.h */,
+				2F11CA381FA8141800AEACF6 /* FacePanel.m */,
+				2F11CA391FA8141800AEACF6 /* FaceThemeView.h */,
+				2F11CA3A1FA8141800AEACF6 /* FaceThemeView.m */,
+				2F11CA3B1FA8141800AEACF6 /* PanelBottomView.h */,
+				2F11CA3C1FA8141800AEACF6 /* PanelBottomView.m */,
+			);
+			path = FacePanel;
+			sourceTree = "<group>";
+		};
+		2F11CA3D1FA8141800AEACF6 /* MorePanel */ = {
+			isa = PBXGroup;
+			children = (
+				2F11CA3E1FA8141800AEACF6 /* MorePanel.h */,
+				2F11CA3F1FA8141800AEACF6 /* MorePanel.m */,
+			);
+			path = MorePanel;
+			sourceTree = "<group>";
+		};
+		2F11CA401FA8141800AEACF6 /* ToolBarPanel */ = {
+			isa = PBXGroup;
+			children = (
+				2F11CA411FA8141800AEACF6 /* ChatToolBar.h */,
+				2F11CA421FA8141800AEACF6 /* ChatToolBar.m */,
+				2F11CA431FA8141800AEACF6 /* OfficialAccountToolbar.h */,
+				2F11CA441FA8141800AEACF6 /* OfficialAccountToolbar.m */,
+				2F11CA451FA8141800AEACF6 /* RFRecordButton.h */,
+				2F11CA461FA8141800AEACF6 /* RFRecordButton.m */,
+				2F11CA471FA8141800AEACF6 /* RFTextView.h */,
+				2F11CA481FA8141800AEACF6 /* RFTextView.m */,
+			);
+			path = ToolBarPanel;
+			sourceTree = "<group>";
+		};
+		2F11CA5B1FA8152D00AEACF6 /* Mine(我的) */ = {
+			isa = PBXGroup;
+			children = (
+				2F11CA5C1FA8152D00AEACF6 /* Controller */,
+				2F11CA5D1FA8152D00AEACF6 /* Model */,
+				2F11CA5E1FA8152D00AEACF6 /* View */,
+			);
+			path = "Mine(我的)";
+			sourceTree = "<group>";
+		};
+		2F11CA5C1FA8152D00AEACF6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2F11CA5F1FA8155B00AEACF6 /* LZMineViewController.h */,
+				2F11CA601FA8155B00AEACF6 /* LZMineViewController.m */,
+				2F11CA621FA8160F00AEACF6 /* LZMessageViewController.h */,
+				2F11CA631FA8160F00AEACF6 /* LZMessageViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2F11CA5D1FA8152D00AEACF6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2F11CA5E1FA8152D00AEACF6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		5D6C579A928599484FAF92F3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -2355,6 +2545,7 @@
 		E78E95261FA77CC400FB0D95 /* UISections(各个模块) */ = {
 			isa = PBXGroup;
 			children = (
+				2F11CA5B1FA8152D00AEACF6 /* Mine(我的) */,
 				E78E95271FA77CC400FB0D95 /* Demo(常用功能) */,
 				E78E9ACC1FA77CC500FB0D95 /* Home(主页) */,
 				E78E9AD71FA77CC500FB0D95 /* Live(直播) */,
@@ -5522,6 +5713,7 @@
 		E78E9AF31FA77CC500FB0D95 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				2F11CA1F1FA8141800AEACF6 /* 群聊键盘 */,
 				E78E9AF41FA77CC500FB0D95 /* Commons */,
 				E78E9AFD1FA77CC500FB0D95 /* LZExtension */,
 				E78E9B4A1FA77CC600FB0D95 /* LZScrollContentView */,
@@ -5776,7 +5968,7 @@
 				TargetAttributes = {
 					E74476501F9660C9002EC7B8 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 8RL8MGBZ32;
+						DevelopmentTeam = 9TG69MYF39;
 						ProvisioningStyle = Automatic;
 					};
 					E74476691F9660C9002EC7B8 = {
@@ -5855,6 +6047,7 @@
 				E78E9BD51FA77CC600FB0D95 /* temp.jpg in Resources */,
 				E78E9C451FA77CC600FB0D95 /* DetailViewController.xib in Resources */,
 				E78E9C331FA77CC600FB0D95 /* pageControlCurrentDot@2x.png in Resources */,
+				2F11CA501FA8141900AEACF6 /* systemEmoji.plist in Resources */,
 				E78E9BEA1FA77CC600FB0D95 /* CMChartViewController.xib in Resources */,
 				E78E9B971FA77CC600FB0D95 /* CMDBOperationQueryCell.xib in Resources */,
 				E78E9C481FA77CC600FB0D95 /* placeholder.png in Resources */,
@@ -5873,6 +6066,7 @@
 				E78E9C2E1FA77CC600FB0D95 /* h2.jpg in Resources */,
 				E78E9C561FA77CC600FB0D95 /* LaunchImageAd.json in Resources */,
 				E74476611F9660C9002EC7B8 /* Assets.xcassets in Resources */,
+				2F11CA4F1FA8141900AEACF6 /* face.plist in Resources */,
 				E78E9BE61FA77CC600FB0D95 /* LZ201709View.json in Resources */,
 				E78E9B621FA77CC600FB0D95 /* mine_btn_enter@2x.png in Resources */,
 				E78E9DD41FA77CC800FB0D95 /* LZ201710View.json in Resources */,
@@ -5933,6 +6127,7 @@
 				E78E9C2F1FA77CC600FB0D95 /* h3.jpg in Resources */,
 				E78E9BCB1FA77CC600FB0D95 /* LZSecondsViewController.xib in Resources */,
 				E78E9C571FA77CC600FB0D95 /* LaunchVideoAd.json in Resources */,
+				2F11CA4E1FA8141900AEACF6 /* emotion.plist in Resources */,
 				E78E9C471FA77CC600FB0D95 /* MasterViewController.xib in Resources */,
 				E78E9C411FA77CC600FB0D95 /* CMICarouselSampleController.xib in Resources */,
 				E78E9BB31FA77CC600FB0D95 /* welcome_guide_3_new@2x.png in Resources */,
@@ -6030,12 +6225,14 @@
 			files = (
 				E78E9BBA1FA77CC600FB0D95 /* MSSBrowseBaseViewController.m in Sources */,
 				E78E9C961FA77CC700FB0D95 /* ZXBizcardResultParser.m in Sources */,
+				2F11CA641FA8160F00AEACF6 /* LZMessageViewController.m in Sources */,
 				E78E9DF21FA77CC800FB0D95 /* NSObject+Extension.m in Sources */,
 				E78E9C3A1FA77CC600FB0D95 /* TADotView.m in Sources */,
 				E78E9DFA1FA77CC800FB0D95 /* UIColor+Extension.m in Sources */,
 				E78E9D061FA77CC700FB0D95 /* ZXRSSExpandedDecodedObject.m in Sources */,
 				E78E9C201FA77CC600FB0D95 /* TOActivityCroppedImageProvider.m in Sources */,
 				E78E9C071FA77CC600FB0D95 /* PNRadarChartDataItem.m in Sources */,
+				2F11CA521FA8141900AEACF6 /* FacePageView.m in Sources */,
 				E78E9D8A1FA77CC700FB0D95 /* NSObject+PKBlocks.m in Sources */,
 				E78E9B951FA77CC600FB0D95 /* CMDBUserModel.m in Sources */,
 				E78E9C021FA77CC600FB0D95 /* PNLineChartData.m in Sources */,
@@ -6058,6 +6255,7 @@
 				E78E9B6A1FA77CC600FB0D95 /* CM3DTouchSampleController.m in Sources */,
 				E78E9CE91FA77CC700FB0D95 /* ZXDataMatrixHighLevelEncoder.m in Sources */,
 				E78E9C991FA77CC700FB0D95 /* ZXEmailAddressParsedResult.m in Sources */,
+				2F11CA541FA8141900AEACF6 /* FaceThemeView.m in Sources */,
 				E78E9BFA1FA77CC600FB0D95 /* JHWaveChart.m in Sources */,
 				E78E9C831FA77CC700FB0D95 /* LBXScanWrapper.m in Sources */,
 				E78E9CF01FA77CC700FB0D95 /* ZXMaxiCodeBitMatrixParser.m in Sources */,
@@ -6078,6 +6276,7 @@
 				E78E9CE31FA77CC700FB0D95 /* ZXDataMatrixBase256Encoder.m in Sources */,
 				E78E9D4F1FA77CC700FB0D95 /* ZXQRCodeVersion.m in Sources */,
 				E78E9CF31FA77CC700FB0D95 /* ZXMaxiCodeReader.m in Sources */,
+				2F11CA491FA8141800AEACF6 /* NSString+Emoji.m in Sources */,
 				E78E9B751FA77CC600FB0D95 /* MDScratchImageView.mm in Sources */,
 				E78E9CB11FA77CC700FB0D95 /* ZXVEventResultParser.m in Sources */,
 				E78E9D411FA77CC700FB0D95 /* ZXPDF417HighLevelEncoder.m in Sources */,
@@ -6106,6 +6305,7 @@
 				E78E9BA81FA77CC600FB0D95 /* TZImagePickerController.m in Sources */,
 				E78E9BEC1FA77CC600FB0D95 /* CMJHChartViewController.m in Sources */,
 				E78E9CCF1FA77CC700FB0D95 /* ZXBinarizer.m in Sources */,
+				2F11CA571FA8141900AEACF6 /* ChatToolBar.m in Sources */,
 				E78E9CFD1FA77CC700FB0D95 /* ZXAI01AndOtherAIs.m in Sources */,
 				E78E9BF21FA77CC600FB0D95 /* JHPieForeBGView.m in Sources */,
 				E78E9D5C1FA77CC700FB0D95 /* ZXMultiFinderPatternFinder.m in Sources */,
@@ -6125,6 +6325,7 @@
 				E78E9D341FA77CC700FB0D95 /* ZXPDF417CodewordDecoder.m in Sources */,
 				E78E9C951FA77CC700FB0D95 /* ZXAddressBookParsedResult.m in Sources */,
 				E78E9C291FA77CC600FB0D95 /* CMCyclePictureSampleController.m in Sources */,
+				2F11CA551FA8141900AEACF6 /* PanelBottomView.m in Sources */,
 				E78E9C1A1FA77CC600FB0D95 /* MASExampleSidesView.m in Sources */,
 				E78E9C8B1FA77CC700FB0D95 /* ZXAztecHighLevelEncoder.m in Sources */,
 				E78E9BE31FA77CC600FB0D95 /* DWiPhoneType.m in Sources */,
@@ -6137,6 +6338,7 @@
 				E78E9B6D1FA77CC600FB0D95 /* CMAnimationCell.m in Sources */,
 				E78E9BF41FA77CC600FB0D95 /* JHRadarChart.m in Sources */,
 				E78E9D9E1FA77CC800FB0D95 /* ZJVc1Controller.m in Sources */,
+				2F11CA4A1FA8141800AEACF6 /* ChatKeyBoard.m in Sources */,
 				E78E9C4C1FA77CC600FB0D95 /* CMLaunchAdWebSampleController.m in Sources */,
 				E78E9CC41FA77CC700FB0D95 /* ZXByteArray.m in Sources */,
 				E78E9BE01FA77CC600FB0D95 /* CMUnLockSampleController.m in Sources */,
@@ -6201,6 +6403,7 @@
 				E78E9BCE1FA77CC600FB0D95 /* LZTableViewDemoController.m in Sources */,
 				E78E9C431FA77CC600FB0D95 /* iCarousel.m in Sources */,
 				E78E9D861FA77CC700FB0D95 /* UIView+MJExtension.m in Sources */,
+				2F11CA4C1FA8141900AEACF6 /* FaceThemeModel.m in Sources */,
 				E78E9D1D1FA77CC700FB0D95 /* ZXEAN8Writer.m in Sources */,
 				E78E9CDA1FA77CC700FB0D95 /* ZXResultPoint.m in Sources */,
 				E78E9D5D1FA77CC700FB0D95 /* ZXQRCodeMultiReader.m in Sources */,
@@ -6247,8 +6450,10 @@
 				E78E9DC41FA77CC800FB0D95 /* MMMaterialDesignSpinner.m in Sources */,
 				E78E9D691FA77CC700FB0D95 /* MJExample.m in Sources */,
 				E78E9D1B1FA77CC700FB0D95 /* ZXEAN13Writer.m in Sources */,
+				2F11CA531FA8141900AEACF6 /* FacePanel.m in Sources */,
 				E78E9D991FA77CC700FB0D95 /* ZJVc9Controller.m in Sources */,
 				E78E9CF91FA77CC700FB0D95 /* ZXAI01392xDecoder.m in Sources */,
+				2F11CA511FA8141900AEACF6 /* FaceButton.m in Sources */,
 				E78E9D331FA77CC700FB0D95 /* ZXPDF417Codeword.m in Sources */,
 				E78E9C4B1FA77CC600FB0D95 /* CMLaunchAdSampleController.m in Sources */,
 				E78E9C171FA77CC600FB0D95 /* MASExampleMarginView.m in Sources */,
@@ -6434,6 +6639,7 @@
 				E78E9D451FA77CC700FB0D95 /* ZXPDF417Writer.m in Sources */,
 				E78E9D651FA77CC700FB0D95 /* MJChiBaoZiHeader.m in Sources */,
 				E78E9CA91FA77CC700FB0D95 /* ZXSMTPResultParser.m in Sources */,
+				2F11CA5A1FA8141900AEACF6 /* RFTextView.m in Sources */,
 				E78E9C101FA77CC600FB0D95 /* MASExampleAspectFitView.m in Sources */,
 				E78E9CDC1FA77CC700FB0D95 /* ZXDataMatrixBitMatrixParser.m in Sources */,
 				E78E9D2F1FA77CC700FB0D95 /* ZXPDF417ECErrorCorrection.m in Sources */,
@@ -6529,6 +6735,7 @@
 				E78E9B661FA77CC600FB0D95 /* CM3DTouchCommitSampleController.m in Sources */,
 				E78E9E0A1FA77CC800FB0D95 /* UIViewController+Extension.m in Sources */,
 				E78E9BA51FA77CC600FB0D95 /* TZAssetModel.m in Sources */,
+				2F11CA561FA8141900AEACF6 /* MorePanel.m in Sources */,
 				E78E9D501FA77CC700FB0D95 /* ZXQRCodeAlignmentPattern.m in Sources */,
 				E78E9BF61FA77CC600FB0D95 /* JHScatterChart.m in Sources */,
 				E78E9CAE1FA77CC700FB0D95 /* ZXURIResultParser.m in Sources */,
@@ -6574,6 +6781,7 @@
 				E78E9BA91FA77CC600FB0D95 /* TZPhotoPickerController.m in Sources */,
 				E78E9DFF1FA77CC800FB0D95 /* UIImageView+Extension.m in Sources */,
 				E78E9B9E1FA77CC600FB0D95 /* FMResultSet.m in Sources */,
+				2F11CA591FA8141900AEACF6 /* RFRecordButton.m in Sources */,
 				E78E9DF91FA77CC800FB0D95 /* UIButton+Extensions.m in Sources */,
 				E78E9C261FA77CC600FB0D95 /* TOCropScrollView.m in Sources */,
 				E78E9D731FA77CC700FB0D95 /* MJRefreshAutoFooter.m in Sources */,
@@ -6590,7 +6798,9 @@
 				E78E9BAE1FA77CC600FB0D95 /* CMNetworkReachablityManager.m in Sources */,
 				E78E9C051FA77CC600FB0D95 /* PNPieChartDataItem.m in Sources */,
 				E78E9CC51FA77CC700FB0D95 /* ZXCharacterSetECI.m in Sources */,
+				2F11CA4D1FA8141900AEACF6 /* MoreItem.m in Sources */,
 				E78E9CA61FA77CC700FB0D95 /* ZXSMSMMSResultParser.m in Sources */,
+				2F11CA581FA8141900AEACF6 /* OfficialAccountToolbar.m in Sources */,
 				E78E9C271FA77CC600FB0D95 /* TOCropToolbar.m in Sources */,
 				E78E9CBC1FA77CC700FB0D95 /* ZXGenericGF.m in Sources */,
 				E78E9D281FA77CC700FB0D95 /* ZXUPCEANExtension5Support.m in Sources */,
@@ -6600,6 +6810,7 @@
 				E78E9E111FA77CC800FB0D95 /* UIViewController+LZExtension.m in Sources */,
 				E78E9DD21FA77CC800FB0D95 /* CHTCollectionViewWaterfallLayout.m in Sources */,
 				E78E9BEB1FA77CC600FB0D95 /* CMJHChartShowController.m in Sources */,
+				2F11CA611FA8155B00AEACF6 /* LZMineViewController.m in Sources */,
 				E78E9D3A1FA77CC700FB0D95 /* ZXPDF417Detector.m in Sources */,
 				E78E9CEC1FA77CC700FB0D95 /* ZXDataMatrixTextEncoder.m in Sources */,
 				E78E9CD81FA77CC700FB0D95 /* ZXPlanarYUVLuminanceSource.m in Sources */,
@@ -6628,6 +6839,7 @@
 				E78E9D2D1FA77CC700FB0D95 /* ZXModulusGF.m in Sources */,
 				E78E9CA51FA77CC700FB0D95 /* ZXResultParser.m in Sources */,
 				E78E9DBE1FA77CC800FB0D95 /* ASValueTrackingSlider.m in Sources */,
+				2F11CA4B1FA8141900AEACF6 /* ChatToolBarItem.m in Sources */,
 				E78E9CAC1FA77CC700FB0D95 /* ZXTextParsedResult.m in Sources */,
 				E78E9E061FA77CC800FB0D95 /* UIToolbar+Extension.m in Sources */,
 				E78E9CF61FA77CC700FB0D95 /* ZXAbstractExpandedDecoder.m in Sources */,
@@ -6824,7 +7036,7 @@
 			baseConfigurationReference = 62F61F2CD06464E91E9808D7 /* Pods-LZKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8RL8MGBZ32;
+				DEVELOPMENT_TEAM = 9TG69MYF39;
 				GCC_PREFIX_HEADER = LZKit/LZKit.pch;
 				INFOPLIST_FILE = LZKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -6839,7 +7051,7 @@
 			baseConfigurationReference = 0DC009B45764B8BBB6AB0690 /* Pods-LZKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8RL8MGBZ32;
+				DEVELOPMENT_TEAM = 9TG69MYF39;
 				GCC_PREFIX_HEADER = LZKit/LZKit.pch;
 				INFOPLIST_FILE = LZKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;

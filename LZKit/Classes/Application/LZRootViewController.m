@@ -11,6 +11,7 @@
 #import "LZSecondViewController.h"
 #import "LZExampleViewController.h"
 #import "LZLiveViewController.h"
+#import "LZMineViewController.h"
 #import "LZSlidingCardViewController.h"
 
 @interface LZRootViewController ()<UITabBarControllerDelegate>
@@ -64,7 +65,7 @@
         LZSlidingCardViewController *vc2 = [[LZSlidingCardViewController alloc] init];
         LZLiveViewController *vc3 = [[LZLiveViewController alloc] init];
         LZExampleViewController *vc4 = [[LZExampleViewController alloc] init];
-        UIViewController *vc5 = [[UIViewController alloc] init];
+        LZMineViewController *vc5 = [[LZMineViewController alloc] init];
 
         [self addOneChildVC:vc1 title:@"消息" normalImageNamed:@"tab_messages_nor" selectedImageName:@"tab_messages_press"];
         [self addOneChildVC:vc2 title:@"通讯录" normalImageNamed:@"tab_groups_nor" selectedImageName:@"tab_groups_press"];
